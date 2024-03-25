@@ -1,0 +1,7 @@
+body { background-color: rgb(240, 234, 214);
+font-family: 'Times New Roman', Times, serif;
+text-shadow: 1px 1px 2px white, 0 0 1em gray, 0 0 0.2em gray;}
+h1,h2 {text-align: center; text-decoration: underline;}
+div {width: 60%; margin: auto;}
+ol {list-style-type: upper-roman;font-size: large;}
+li {margin-bottom: 15px;}
