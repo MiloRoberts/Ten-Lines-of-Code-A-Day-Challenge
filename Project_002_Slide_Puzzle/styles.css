@@ -1,0 +1,18 @@
+:root {
+    --image-width: 140px;
+}
+
+#puzzle-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.puzzle-row {
+    display: flex;
+}
+
+.cell {
+    height: var(--image-width);
+    width: var(--image-width);
+    border: 1px solid black;
+}
