@@ -1,3 +1,7 @@
 body {
-    background-image: url('Project_002_Slide_Puzzle/images/WoodGrain.jpg');
+    background-image: url('images/WoodGrain.jpg');
+}
+
+h1 {
+    text-align: center; font-family: 'Times New Roman', Times, serif; 
 }
