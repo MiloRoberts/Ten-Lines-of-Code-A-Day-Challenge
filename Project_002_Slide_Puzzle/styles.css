@@ -2,6 +2,8 @@
     --image-width: 140px;
 }
 
+/* TO DO: Add opacity to background image? */
+
 body {
     background-image: url('images/WoodGrain.jpg');
     display: flex;
