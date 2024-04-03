@@ -1,5 +1,5 @@
 :root {
-    --image-width: 140px;
+    --image-width: 200px;
 }
 
 /* TO DO: Add opacity to background image? */
@@ -10,7 +10,9 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: large;
+    background-color: rgba(255, 255, 255, 0.5); /* <--- doesn't do anything */
 }
+
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -22,9 +24,10 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: rgba(187, 140, 19, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    border: 1px solid rgb(167, 120, 9);
+    border: 10px solid rgb(5, 5, 5);
+    box-shadow: -5px 5px 10px rgb(22, 22, 22), -10px 10px 10px rgb(41, 40, 40);
 }
 
 .puzzle-row {
