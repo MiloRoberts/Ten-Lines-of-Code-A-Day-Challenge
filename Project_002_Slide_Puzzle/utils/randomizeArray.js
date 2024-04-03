@@ -1,5 +1,5 @@
 const randomizeArray = function (array) {
-    for (let i =array.lenght -1; i > 0; i--) {
+    for (let i =array.length -1; i > 0; i--) {
         const x =Math.floor(Math.random() * (i + 1));
         const temp = array[i];
         array[i] = array[x];
