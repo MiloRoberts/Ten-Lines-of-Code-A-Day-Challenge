@@ -1,16 +1,44 @@
 :root {
+    --image-width: 140px;
 }
 
 /* TO DO: Add opacity to background image? */
-
 body {
-    background-image: url('images/WoodGrain.jpg');
+    margin: 0;
+    padding: 0;
+}
+.low-op-bg-image {
+    --bg-image: url('images/WoodGrain.jpg');
+    --bg-image-op: .80;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+    position: relative;
+    isolation: isolate;
+
     flex-direction: column;
     align-items: center;
     font-size: large;
-    background-color: rgba(255, 255, 255, 0.5); /* <--- doesn't do anything */
-}
+ }
+
+ .low-op-bg-image::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: var(--bg-image-op);
+
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+
+ }
+
 
 
 h1 {
