@@ -1,14 +1,11 @@
 import randomizeArray from "./utils/randomizeArray.js";
+import setInitialImages from "./utils/setInitialImages.js";
 
-let positions = ["1a", "1b", "1c", "2a", "2b", "2c", "3a", "3b", "3c"];
-
-// TO DO: randomize the values 
-
-// convert nodelist of cells to array
+let imagePositions = ["1b", "1c", "2a", "2b", "2c", "3a", "3b", "3c"];
 const cells = [...document.querySelectorAll('.cell')];
 
-// do the following anonymous function on each cell
-cells.map((cell) => {
-    console.log(cell);
-    // TO DO: create img elements and place them in puzzle cells
-});
+// TO DO: randomize the imagePositions array
+
+// randomizeArray(imagePositions);
+
+setInitialImages(cells, imagePositions);
