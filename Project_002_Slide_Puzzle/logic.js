@@ -6,6 +6,6 @@ const cells = [...document.querySelectorAll('.cell')];
 
 // TO DO: randomize the imagePositions array
 
-// randomizeArray(imagePositions);
+imagePositions = randomizeArray(imagePositions);
 
 setInitialImages(cells, imagePositions);
