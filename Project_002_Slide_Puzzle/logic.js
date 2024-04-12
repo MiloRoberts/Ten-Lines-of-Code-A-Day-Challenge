@@ -5,8 +5,17 @@ let imagePositions = ["1b", "1c", "2a", "2b", "2c", "3a", "3b", "3c"];
 const cells = [...document.querySelectorAll('.cell')];
 
 imagePositions = randomizeArray(imagePositions);
-
 setInitialImages(cells, imagePositions);
+
+// place cells in a multidimensional array
+let cellsAsGrid = [];
+let z = 0;
+for (let x = 0; x < 3; x++) {
+    cellsAsGrid.push([]);
+    for (let y = 0; y < 3; y++, z++) {
+        cellsAsGrid[x].push(cells[z]);
+    }
+}
 
 // add event listeners to each cell
 cells.map((cell) => {
